@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans:400,500&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="display">0</div>
+        <div class="keys">
+            <div class="others">
+                <button type="button" data-action="clear" class="btn clear other">AC</button>
+                <button type="button" data-action="pos-neg" class="btn pos-neg other">+/-</button>
+                <button type="button" data-action="percent" class="btn percent other">%</button>
+            </div>
+            <div class="operations">
+                <button type="button" data-action="/" data-op="/" class="btn divide opn operation">÷</button>
+                <button type="button" data-action="*" data-op="*" class="btn multiply opn operation">×</button>
+                <button type="button" data-action="-" data-op="-" class="btn subtract opn operation">-</button>
+                <button type="button" data-action="+" data-op="+" class="btn add opn operation">+</button>
+                <button type="button" data-action="calculate" class="btn equal operation">=</button>
+            </div>
+            <div class="numbers">
+                <button type="button" data-num="1" class="btn one number one-three">1</button>
+                <button type="button" data-num="2" class="btn two number one-three">2</button>
+                <button type="button" data-num="3" class="btn three number one-three">3</button>
+                <button type="button" data-num="4" class="btn four number four-six">4</button>
+                <button type="button" data-num="5" class="btn five number four-six">5</button>
+                <button type="button" data-num="6" class="btn six number four-six">6</button>
+                <button type="button" data-num="7" class="btn seven number svn-nine">7</button>
+                <button type="button" data-num="8" class="btn eight number svn-nine">8</button>
+                <button type="button" data-num="9" class="btn nine number svn-nine">9</button>
+                <div class="zeros">
+                    <button type="button" data-num="0" class="btn zero zero-begin number">0</button>
+                    <button type="button" data-num="0" class="btn zero zero-center number">0</button>
+                    <button type="button" data-num="0" class="btn zero zero-end number">0</button>
+                </div>
+                <button type="button" data-action="decimal" class="btn decimal number dec">.</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
